@@ -1,4 +1,4 @@
 apply plugin: 'war'
 
-sourceCompatibility = 1.8  //ÉèÖÃJDK°æ±¾
-webAppDirName = 'WebContent'  //ÉèÖÃ WebApp ¸ùÄ¿Â¼
+sourceCompatibility = 1.8  //è®¾ç½®JDKç‰ˆæœ¬
+webAppDirName = 'WebContent'  //è®¾ç½® WebApp æ ¹ç›®å½•
