@@ -1,0 +1,4 @@
+apply plugin: 'war'
+
+sourceCompatibility = 1.8  //设置JDK版本
+webAppDirName = 'WebContent'  //设置 WebApp 根目录
