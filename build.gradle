@@ -1,4 +1,17 @@
+apply plugin: 'java'
 apply plugin: 'war'
 
 sourceCompatibility = 1.8  //设置JDK版本
 webAppDirName = 'WebContent'  //设置 WebApp 根目录
+repositories {
+    jcenter()
+}
+
+dependencies {
+	tasks.withType(JavaCompile) {  
+        options.encoding = "UTF-8"  
+    }
+    compile fileTree(dir: 'WebContent/WEB-INF/lib', include: ['*.jar'])
+    compile 'org.slf4j:slf4j-api:1.7.21'
+    testCompile 'junit:junit:4.12'
+}
